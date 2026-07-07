@@ -34,6 +34,7 @@ The implementation also supports rendering a step-by-step video of vehicle movem
 
 https://github.com/Rezaei-Parham/SDN-Vehicle/blob/main/outputs/simulation_172_clients.mp4
 
+![Simulation video preview](outputs/simulation_video_preview.png)
 ---
 
 ## What the code does
