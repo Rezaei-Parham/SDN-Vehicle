@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehicular-edge-ctde"
+version = "1.0.0"
+description = "Two-timescale vehicular edge simulation with convex provider placement and masked CTDE-PPO offloading"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "cvxpy>=1.3",
+  "torch>=2.0",
+  "matplotlib>=3.6",
+  "Pillow>=9.0",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+vecsim = "vecsim.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vecsim*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

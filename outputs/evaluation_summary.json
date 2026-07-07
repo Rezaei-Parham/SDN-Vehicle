@@ -1,0 +1,429 @@
+{
+  "average_provider_locations": {
+    "scenario_20": {
+      "Convex + CTDE-PPO": [
+        [
+          1309.8559781591512,
+          989.9771694667646
+        ],
+        [
+          1074.316368485417,
+          904.1740391373108
+        ],
+        [
+          1149.8330786924723,
+          827.7625624306804
+        ]
+      ],
+      "Convex + greedy": [
+        [
+          1283.4469722190993,
+          969.5664142974706
+        ],
+        [
+          1233.244979729244,
+          917.3312067338455
+        ],
+        [
+          1002.5360307978112,
+          832.5655181226356
+        ]
+      ],
+      "Random + CTDE-PPO": [
+        [
+          1273.9351410284867,
+          689.3186265861133
+        ],
+        [
+          1084.111433857297,
+          1006.8643142622125
+        ],
+        [
+          602.027636209122,
+          861.9644935752768
+        ]
+      ],
+      "Random + greedy": [
+        [
+          1273.9351410284867,
+          689.3186265861133
+        ],
+        [
+          1084.111433857297,
+          1006.8643142622125
+        ],
+        [
+          602.027636209122,
+          861.9644935752768
+        ]
+      ]
+    },
+    "scenario_50": {
+      "Convex + CTDE-PPO": [
+        [
+          1019.8908924676437,
+          855.0171250720157
+        ],
+        [
+          1665.306958286389,
+          996.9017391304386
+        ],
+        [
+          1220.3050699292203,
+          809.774009722353
+        ],
+        [
+          1026.1942191900505,
+          671.0775402673443
+        ],
+        [
+          1197.1911602289285,
+          1073.0082253673852
+        ],
+        [
+          1305.467609053379,
+          962.4667987342615
+        ]
+      ],
+      "Convex + greedy": [
+        [
+          932.0527251612846,
+          802.2486690425587
+        ],
+        [
+          1639.9316164204047,
+          994.586840187514
+        ],
+        [
+          1226.390657755073,
+          727.0188553779633
+        ],
+        [
+          1010.0298630460824,
+          760.4519245307283
+        ],
+        [
+          1285.8404788604994,
+          1034.0543132590203
+        ],
+        [
+          1258.7145378205612,
+          1014.3504997678309
+        ]
+      ],
+      "Random + CTDE-PPO": [
+        [
+          1243.9502939668112,
+          630.9914010267004
+        ],
+        [
+          1006.2534940996948,
+          585.2247204968976
+        ],
+        [
+          963.3085875585803,
+          951.6044029155532
+        ],
+        [
+          1307.580331899469,
+          641.6188091129866
+        ],
+        [
+          643.7386436040912,
+          867.0092004359599
+        ],
+        [
+          812.9158095157612,
+          536.5647008415397
+        ]
+      ],
+      "Random + greedy": [
+        [
+          1243.9502939668112,
+          630.9914010267004
+        ],
+        [
+          1006.2534940996948,
+          585.2247204968976
+        ],
+        [
+          963.3085875585803,
+          951.6044029155532
+        ],
+        [
+          1307.580331899469,
+          641.6188091129866
+        ],
+        [
+          643.7386436040912,
+          867.0092004359599
+        ],
+        [
+          812.9158095157612,
+          536.5647008415397
+        ]
+      ]
+    }
+  },
+  "configuration": {
+    "ppo": {
+      "clip_ratio": 0.2,
+      "entropy_coefficient": 0.01,
+      "epochs": 4,
+      "gae_lambda": 0.95,
+      "gamma": 0.99,
+      "hidden_size": 128,
+      "learning_rate": 0.0003,
+      "max_grad_norm": 0.5,
+      "minibatch_size": 512,
+      "reward_scale": 4.0,
+      "rollout_steps": 96,
+      "updates": 100,
+      "value_coefficient": 0.5
+    },
+    "scenarios": {
+      "scenario_20": {
+        "clients": 20,
+        "edge_servers": 2,
+        "name": "scenario_20",
+        "providers": 3
+      },
+      "scenario_50": {
+        "clients": 50,
+        "edge_servers": 4,
+        "name": "scenario_50",
+        "providers": 6
+      }
+    },
+    "seed": 17,
+    "simulation": {
+      "bandwidth_hz": 10000000.0,
+      "blind_spot_threshold": 0.55,
+      "deadline_penalty": 4.0,
+      "delay_weight": 1.0,
+      "edge_cpu_hz": 25000000000.0,
+      "edge_range_m": 700.0,
+      "episode_steps": 160,
+      "hex_radius_m": 140.0,
+      "local_cpu_hz": 800000000.0,
+      "loss_penalty": 0.75,
+      "max_queue": 12,
+      "noise_dbm": -96.0,
+      "placement_interval_s": 20,
+      "provider_cpu_hz": 12000000000.0,
+      "provider_range_m": 360.0,
+      "provider_speed_mps": 25.0,
+      "relay_range_m": 260.0,
+      "task_arrival_probability": 0.72,
+      "task_deadline_max_s": 5.0,
+      "task_deadline_min_s": 1.5,
+      "tx_power_dbm": 23.0,
+      "weather_change_probability": 0.06
+    }
+  },
+  "means": {
+    "scenario_20": {
+      "Convex + CTDE-PPO": {
+        "average_delay_s": 1.4290271798756073,
+        "blind_spot_occurrences": 650.8,
+        "blind_spots_per_step": 4.0675,
+        "completed_tasks": 2275.8,
+        "generated_tasks": 2300.6,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.593589786157012,
+        "missed_deadlines": 180.2,
+        "packet_loss_ratio": 0.18013699766110408,
+        "queue_drops": 2.0
+      },
+      "Convex + greedy": {
+        "average_delay_s": 1.554929791506991,
+        "blind_spot_occurrences": 662.6,
+        "blind_spots_per_step": 4.14125,
+        "completed_tasks": 2069.8,
+        "generated_tasks": 2300.6,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.9068099461793899,
+        "missed_deadlines": 423.4,
+        "packet_loss_ratio": 0.3601494742667929,
+        "queue_drops": 14.2
+      },
+      "Random + CTDE-PPO": {
+        "average_delay_s": 1.5780039335034044,
+        "blind_spot_occurrences": 1443.2,
+        "blind_spots_per_step": 9.02,
+        "completed_tasks": 2291.2,
+        "generated_tasks": 2300.6,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.6627075821757316,
+        "missed_deadlines": 213.4,
+        "packet_loss_ratio": 0.23565661620067296,
+        "queue_drops": 0.6
+      },
+      "Random + greedy": {
+        "average_delay_s": 1.6931926470034437,
+        "blind_spot_occurrences": 1443.2,
+        "blind_spots_per_step": 9.02,
+        "completed_tasks": 2130.2,
+        "generated_tasks": 2300.6,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.92297424672544,
+        "missed_deadlines": 418.2,
+        "packet_loss_ratio": 0.48070551874068945,
+        "queue_drops": 11.0
+      }
+    },
+    "scenario_50": {
+      "Convex + CTDE-PPO": {
+        "average_delay_s": 1.3560975419505403,
+        "blind_spot_occurrences": 170.0,
+        "blind_spots_per_step": 1.0625,
+        "completed_tasks": 5533.4,
+        "generated_tasks": 5764.2,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.593907541179657,
+        "missed_deadlines": 455.2,
+        "packet_loss_ratio": 0.25493186462013534,
+        "queue_drops": 20.8
+      },
+      "Convex + greedy": {
+        "average_delay_s": 1.5706170571250853,
+        "blind_spot_occurrences": 144.0,
+        "blind_spots_per_step": 0.9,
+        "completed_tasks": 4974.4,
+        "generated_tasks": 5764.2,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.9754450779914855,
+        "missed_deadlines": 1233.4,
+        "packet_loss_ratio": 0.3467180895583186,
+        "queue_drops": 67.8
+      },
+      "Random + CTDE-PPO": {
+        "average_delay_s": 1.4963430991712952,
+        "blind_spot_occurrences": 782.2,
+        "blind_spots_per_step": 4.88875,
+        "completed_tasks": 5572.0,
+        "generated_tasks": 5764.2,
+        "invalid_actions": 0.0,
+        "mean_reward": -0.6606042220115661,
+        "missed_deadlines": 536.2,
+        "packet_loss_ratio": 0.3243876154698483,
+        "queue_drops": 18.0
+      },
+      "Random + greedy": {
+        "average_delay_s": 1.705555574810124,
+        "blind_spot_occurrences": 782.2,
+        "blind_spots_per_step": 4.88875,
+        "completed_tasks": 5025.0,
+        "generated_tasks": 5764.2,
+        "invalid_actions": 0.0,
+        "mean_reward": -1.0483911134719848,
+        "missed_deadlines": 1328.2,
+        "packet_loss_ratio": 0.4375933458148985,
+        "queue_drops": 57.8
+      }
+    }
+  },
+  "standard_deviations": {
+    "scenario_20": {
+      "Convex + CTDE-PPO": {
+        "average_delay_s": 0.01643656782680814,
+        "blind_spot_occurrences": 87.7072402940601,
+        "blind_spots_per_step": 0.5481702518378758,
+        "completed_tasks": 17.88183435780569,
+        "generated_tasks": 15.628179676469042,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.029824793492573012,
+        "missed_deadlines": 19.95394697797907,
+        "packet_loss_ratio": 0.021256322579445704,
+        "queue_drops": 1.0954451150103321
+      },
+      "Convex + greedy": {
+        "average_delay_s": 0.05523773179736444,
+        "blind_spot_occurrences": 75.23988304084477,
+        "blind_spots_per_step": 0.47024926900527975,
+        "completed_tasks": 31.858436873142413,
+        "generated_tasks": 15.628179676469042,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.06241201613990679,
+        "missed_deadlines": 48.41735226135358,
+        "packet_loss_ratio": 0.02735374276688715,
+        "queue_drops": 1.5999999999999999
+      },
+      "Random + CTDE-PPO": {
+        "average_delay_s": 0.02965424150029975,
+        "blind_spot_occurrences": 344.88456039666374,
+        "blind_spots_per_step": 2.155528502479149,
+        "completed_tasks": 16.216041440499588,
+        "generated_tasks": 15.628179676469042,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.03374585695333277,
+        "missed_deadlines": 22.817537115122658,
+        "packet_loss_ratio": 0.038412742807143754,
+        "queue_drops": 0.7999999999999999
+      },
+      "Random + greedy": {
+        "average_delay_s": 0.022350717636113786,
+        "blind_spot_occurrences": 344.88456039666374,
+        "blind_spots_per_step": 2.155528502479149,
+        "completed_tasks": 30.168858115613194,
+        "generated_tasks": 15.628179676469042,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.04610916692653802,
+        "missed_deadlines": 34.28352373954579,
+        "packet_loss_ratio": 0.048567253960906304,
+        "queue_drops": 3.521363372331802
+      }
+    },
+    "scenario_50": {
+      "Convex + CTDE-PPO": {
+        "average_delay_s": 0.04614297912504635,
+        "blind_spot_occurrences": 55.774546165791435,
+        "blind_spots_per_step": 0.3485909135361964,
+        "completed_tasks": 21.518364250100426,
+        "generated_tasks": 22.400000000000002,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.02437853582797553,
+        "missed_deadlines": 30.876528302255746,
+        "packet_loss_ratio": 0.0172600115876218,
+        "queue_drops": 7.520638270785266
+      },
+      "Convex + greedy": {
+        "average_delay_s": 0.05387044694971866,
+        "blind_spot_occurrences": 75.30471432785599,
+        "blind_spots_per_step": 0.4706544645491,
+        "completed_tasks": 28.94546596619236,
+        "generated_tasks": 22.400000000000002,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.02222538965126385,
+        "missed_deadlines": 22.87006777427649,
+        "packet_loss_ratio": 0.016305709712487466,
+        "queue_drops": 17.58863269273652
+      },
+      "Random + CTDE-PPO": {
+        "average_delay_s": 0.02391421548183387,
+        "blind_spot_occurrences": 90.53043687070112,
+        "blind_spots_per_step": 0.565815230441882,
+        "completed_tasks": 30.01999333777408,
+        "generated_tasks": 22.400000000000002,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.012825085788305213,
+        "missed_deadlines": 20.42939059296679,
+        "packet_loss_ratio": 0.01755595090045017,
+        "queue_drops": 6.260990336999411
+      },
+      "Random + greedy": {
+        "average_delay_s": 0.060235143442955164,
+        "blind_spot_occurrences": 90.53043687070112,
+        "blind_spots_per_step": 0.565815230441882,
+        "completed_tasks": 81.83642220918507,
+        "generated_tasks": 22.400000000000002,
+        "invalid_actions": 0.0,
+        "mean_reward": 0.05375637481632242,
+        "missed_deadlines": 110.28399702586046,
+        "packet_loss_ratio": 0.004913285142426465,
+        "queue_drops": 20.76920797719547
+      }
+    }
+  },
+  "trace": "/Users/cyberrose/Education/Sharif/Term 10/Real-time systems/Project/simulation.out.xml"
+}

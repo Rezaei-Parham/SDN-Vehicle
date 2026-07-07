@@ -1,0 +1,50 @@
+seed: 17
+
+simulation:
+  hex_radius_m: 140.0
+  placement_interval_s: 20
+  provider_speed_mps: 25.0
+  provider_range_m: 360.0
+  edge_range_m: 700.0
+  relay_range_m: 260.0
+  bandwidth_hz: 10000000.0
+  tx_power_dbm: 23.0
+  noise_dbm: -96.0
+  local_cpu_hz: 800000000.0
+  provider_cpu_hz: 12000000000.0
+  edge_cpu_hz: 25000000000.0
+  task_arrival_probability: 0.72
+  task_deadline_min_s: 1.5
+  task_deadline_max_s: 5.0
+  max_queue: 12
+  episode_steps: 160
+  weather_change_probability: 0.06
+  deadline_penalty: 4.0
+  loss_penalty: 0.75
+  delay_weight: 1.0
+  blind_spot_threshold: 0.55
+
+ppo:
+  updates: 100
+  rollout_steps: 96
+  epochs: 4
+  minibatch_size: 512
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  value_coefficient: 0.5
+  entropy_coefficient: 0.01
+  max_grad_norm: 0.5
+  hidden_size: 128
+  reward_scale: 4.0
+
+scenarios:
+  scenario_20:
+    clients: 20
+    providers: 3
+    edge_servers: 2
+  scenario_50:
+    clients: 50
+    providers: 6
+    edge_servers: 4

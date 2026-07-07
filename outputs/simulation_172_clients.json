@@ -1,0 +1,21 @@
+{
+  "duration_s": 16.0,
+  "final_metrics": {
+    "average_delay_s": 1.540760170921227,
+    "blind_spot_occurrences": 87.0,
+    "blind_spots_per_step": 0.54375,
+    "completed_tasks": 19107.0,
+    "generated_tasks": 19670.0,
+    "invalid_actions": 0.0,
+    "mean_reward": -0.6892673373222351,
+    "missed_deadlines": 1818.0,
+    "packet_loss_ratio": 0.2733569339695244,
+    "queue_drops": 29.0
+  },
+  "fps": 10,
+  "frames": 160,
+  "output": "/Users/cyberrose/Downloads/zip/vehicular_edge_project/outputs/simulation_172_clients.mp4",
+  "raw_vehicles_max": 198,
+  "raw_vehicles_min": 182,
+  "simulated_clients": 172
+}
