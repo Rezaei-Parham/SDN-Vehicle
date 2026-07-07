@@ -32,9 +32,7 @@ The implementation also supports rendering a step-by-step video of vehicle movem
 
 ### Simulation video
 
-Preview frame:
-![Simulation video preview](outputs/simulation_video_preview.png)
-
+https://github.com/Rezaei-Parham/SDN-Vehicle/blob/main/outputs/simulation_172_clients.mp4
 
 ---
 
